@@ -23,7 +23,7 @@ const AboutDialog = ({ show, onCancel }) => {
                     password
                 }
             }
-            const latestReleaseReq = axios.get('https://api.github.com/repos/Startia/flowise/releases/latest')
+            const latestReleaseReq = axios.get('https://api.https://github.com/Startiafr/Flowise')
             const currentVersionReq = axios.get(`${baseURL}/api/v1/version`, { ...config })
 
             Promise.all([latestReleaseReq, currentVersionReq])
