@@ -60,9 +60,9 @@ const AboutDialog = ({ show, onCancel }) => {
                         <Table aria-label='simple table'>
                             <TableHead>
                                 <TableRow>
-                                    <TableCell>Current Version</TableCell>
-                                    <TableCell>Latest Version</TableCell>
-                                    <TableCell>Published At</TableCell>
+                                    <TableCell>Version Actuelle</TableCell>
+                                    <TableCell>Dernière Version</TableCell>
+                                    <TableCell>Publié le</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
