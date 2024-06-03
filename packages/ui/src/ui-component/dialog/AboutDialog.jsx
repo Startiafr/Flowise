@@ -23,7 +23,7 @@ const AboutDialog = ({ show, onCancel }) => {
                     password
                 }
             }
-            const latestReleaseReq = axios.get('https://api.github.com/Startiafr/Flowise')
+            const latestReleaseReq = axios.get('https://api.github.com/repos/FlowiseAI/Flowise/releases/latest')
             const currentVersionReq = axios.get(`${baseURL}/api/v1/version`, { ...config })
 
             Promise.all([latestReleaseReq, currentVersionReq])
@@ -60,9 +60,9 @@ const AboutDialog = ({ show, onCancel }) => {
                         <Table aria-label='simple table'>
                             <TableHead>
                                 <TableRow>
-                                    <TableCell>Version Actuelle</TableCell>
-                                    <TableCell>Dernière Version</TableCell>
-                                    <TableCell>Publié le</TableCell>
+                                    <TableCell>Version Actuelle de startIA</TableCell>
+                                    <TableCell>Dernière Version de Flowise</TableCell>
+                                    <TableCell>Publiée le</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
