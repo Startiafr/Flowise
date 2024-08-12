@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
     flowise:
-        image: flowise:flowise
+        image: startia:2.0.5
         restart: always
         environment:
             - PORT=${PORT}
