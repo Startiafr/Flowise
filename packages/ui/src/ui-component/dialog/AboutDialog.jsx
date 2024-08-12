@@ -23,7 +23,7 @@ const AboutDialog = ({ show, onCancel }) => {
                     password
                 }
             }
-            const latestReleaseReq = axios.get('https://api.github.com/repos/Startia/startia/releases/latest')
+            const latestReleaseReq = axios.get('https://api.github.com/repos/FlowiseAI/Flowise/releases/latest')
             const currentVersionReq = axios.get(`${baseURL}/api/v1/version`, { ...config })
 
             Promise.all([latestReleaseReq, currentVersionReq])
@@ -52,7 +52,7 @@ const AboutDialog = ({ show, onCancel }) => {
             aria-describedby='alert-dialog-description'
         >
             <DialogTitle sx={{ fontSize: '1rem' }} id='alert-dialog-title'>
-                Startia Version
+                Flowise Version
             </DialogTitle>
             <DialogContent>
                 {data && (
@@ -88,9 +88,9 @@ const AboutDialog = ({ show, onCancel }) => {
     return createPortal(component, portalElement)
 }
 
-A-proposDialog.propTypes = {
+AboutDialog.propTypes = {
     show: PropTypes.bool,
     onCancel: PropTypes.func
 }
 
-export default Apropos-Dialog
+export default AboutDialog
