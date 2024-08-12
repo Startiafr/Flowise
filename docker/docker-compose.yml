@@ -1,6 +1,6 @@
 services:
     flowise:
-        image: startia:2.0.5
+        image: flowise:flowise
         restart: always
         environment:
             - PORT=${PORT}
